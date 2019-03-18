@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            CSS Display
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="display.css">
+    </head>
+    <body>
+
+            <!-- https://alligator.io/css/display-inline-vs-inline-block/ -->
+            <!-- https://stackoverflow.com/questions/42572056/why-margin-top-and-bottom-is-missing -->
+            <!-- https://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block -->
+
+
+        <!-- HTML elements are rectangular boxes -->
+        <!-- the display properties decides how the box is going to behave -->
+        <!-- Each browser have different default values; Chrome has block as default -->
+        <!-- display:block; ==) covers entire row ; div is by default block element 
+            This would allow you to force an <img> or inline tag to take up the entire width of the web page
+                                <h1>,<p>,<div>,<form>,<ul>,<ol> are some of block elements-->
+        <div class="a common red"> A </div>
+        <div class="b common blue"> B </div>
+        <div class="c common green"> C </div>
+        <br>
+        <!-- display:inline; ==) like span element;
+            height and width changes doesn't affect;
+            respect left & right margins and padding, but not top & bottom
+            This would allow you to put multiple <div> or other block tags,
+                 which normally are block elements, in the same line like inline elements.
+                                 Span takes width and height only when we make it block element
+                                  <span>,<img>,<a> are some of inline elements  -->
+        <div class="d common red"> D </div>
+        <div class="e common blue"> E </div>
+        <div class="f common green"> F </div>
+        <br>
+         <!-- display:inline-block; ==) elements are parallel;size and width is size of content and space between elements
+                                        to remove the space between them; use margin-right:-4px; -->
+        <div class="g common red"> G </div>
+        <div class="h common blue"> H </div>
+        <div class="i common green"> I </div>
+        <br>
+         <!-- display:none; ==) elements will disappear;on load time it ignores the content  -->
+        <div class="j common red"> J </div>
+        <div class="k common blue"> K </div>
+        <div class="l common green"> L </div>
+        <br>
+        
+    </body>
+</html>

@@ -1,0 +1,31 @@
+.common{
+    font-size: 30px;
+    color: white;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+
+.a,.b,.c{
+    display: block;
+}
+
+.d,.e,.f{
+    display: inline;
+}
+
+.g,.h,.i{
+    display: inline-block;
+    /* to remove the space between them */
+    /* margin-right: -4px; */
+}
+
+.j,.k,.l{
+    display: none;
+}

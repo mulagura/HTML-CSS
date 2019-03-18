@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS Position </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="position.css">
+    </head>
+    <body>
+        <!-- position:static   ==> default position. right,left,top and bottom doesn't affect -->   
+        <!-- position:relative ==> just position:relative doesn't do anything.
+                                   relative enables to use right,left,top and bottom.  
+                                   moves freely and doesn't affect surroundings --> 
+        <!-- position:absolute ==> The element is removed from the normal document flow
+                                   As far as the rest of the elements on the page are concerned, the absolutely positioned element simply doesn't exist
+                                   The element itself is then drawn separately, sort of "on top" of everything else  
+                                   relative enables to use right,left,top and bottom.
+                                   positioned relative to its closest ancestor position:relative,otherwise, it is placed relative to the initial containing block/root -->
+        <!-- position:fixed    ==> pretty much behaves like absolute but fixed to its position even scrolling page doesn't affect                                                         -->
+        <!-- The position property starts at the top left corner  -->
+
+        <!-- position:relative -->
+        <div>
+            <span> Telugu </span>
+            <span id="positionRelative"> English </span>
+            <span> Hindi </span>
+        </div>    
+        <div>
+            <span> Above are the languages i have known </span>
+        </div>
+
+        <!-- position:absolute -->
+        <br>
+        <div id="positionAbsolute">
+            <div class="first common"> First </div>
+            <div class="second common"> Second </div>
+            <div class="third common"> Third </div>
+        </div>  
+        
+        <!-- position:fixed -->
+        <br><br><br><br><br>
+        <div>
+            <div class="common one"> One </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            <div class="common two"> Two </div>
+            <div class="common three"> Three </div>
+            
+        </div>  
+
+    </body>
+</html>

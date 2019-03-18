@@ -1,0 +1,66 @@
+/* pseudo classes --> link,visited,hover,active */
+
+:root {
+    font-family: cursive;
+}
+
+a:link{
+    /* unvisited link */
+    color: olive;
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover{
+    color: pink;
+}
+
+a:active{
+    color:maroon;
+}
+
+h2:hover{
+    color: pink;
+    padding: 20px;
+}
+
+div p:last-child{
+    color: aqua;
+}
+
+div p:nth-child(odd){  
+    /* 3,2 or even/odd ; 2n+0 --> starts at oth p and every second p */
+    color: goldenrod;
+}
+
+
+ /* pseudo elements -->  Introduced in CSS3 */
+
+ /* ::selection
+    ::first-line
+    ::first-letter
+    ::before
+    ::after
+ */
+
+
+.elements::first-letter{
+    background-color: green;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+h4::selection{
+
+    color: goldenrod;
+}
+
+a.anchor::before{
+    content: "Hello google!";
+}
+
+a.anchor1::before{
+    content: attr(class); 
+}

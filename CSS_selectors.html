@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        CSS Selectors
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p{
+            font-family: 'Courier New';
+        }
+
+        p.indian.bharath{
+            font-style: italic;
+            color: blueviolet;
+        }
+
+        div + p {
+            text-decoration: overline;
+            color: greenyellow;
+        }
+
+
+    </style>
+    <script src=".js" async></script>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors -->
+    <!-- https://www.w3schools.com/cssref/css_selectors.asp -->
+
+    
+    <!-- 1. Type/tag selector -->
+    <!-- matches elements by node name. In other words, it selects all elements of the given type within a document. -->
+
+        <p> There are many types of movies viz. Drama,Action,Horror,romance,comedy </p>
+
+    <!-- 2. Class Selector -->
+    <!-- matches elements based on the contents of their class attribute. -->
+    <!-- equivalent to: [class~=class_name] {  } -->
+    <!-- selects all elements with an attribute that contains a space-separated list of words/class names -->
+
+        <p> Hollywood movies are one kind of gem </p>
+        <p class="indian bharath asia"> follows Indian movies </p>
+
+    <!-- 3. ID Selector -->
+    <!-- matches an element based on the value of its id attribute. In order for the element to be selected, its ID attribute must match exactly the value given in the selector. -->
+    <!-- equivalent to: [id=id_value] {  } -->
+
+    <!-- 4. Universal Selector -->
+    <!-- * will match all the elements of the document -->
+
+    <!-- 5. attribute selectors  -->
+    <!-- matches elements based on the presence or value of a given attribute. -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors -->
+
+    <!-- 6. Combinators -->
+    <!-- i)   adjacent sibling combinator -->
+            <div>
+                <p> Tollywood </p>
+                <p> Bollywood </p>
+                <p> Kollywood </p>
+                <p> Sandalwood </p>
+            </div>
+    <!-- ii)  general sibling combinator -->
+    <!-- iii) child combinator -->
+    <!-- iv)  descendant combinator -->
+    <!-- v)   column combinator -->
+
+    <!-- 7. refer pseudo -->
+
+</body>
+
+</html>

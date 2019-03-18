@@ -1,0 +1,59 @@
+.display-inline-block{
+    display: inline-block;
+}
+
+.a{
+    width:100px;
+    height:100px;
+    background-color: olive;
+    /* overflow: visible; default property */
+}
+
+.b{
+    width:50px;
+    height:150px;
+    background-color: aqua;
+  
+}
+
+.c{
+    width:100px;
+    height:100px;
+    background-color: olive;
+    overflow: hidden;
+}
+
+.d{
+    width:50px;
+    height:150px;
+    background-color: aqua;
+  
+}
+
+.e{
+    width:100px;
+    height:100px;
+    background-color: olive;
+    overflow: scroll;
+}
+
+.f{
+    width:50px;
+    height:150px;
+    background-color: aqua;
+  
+}
+
+.g{
+    width:100px;
+    height:100px;
+    background-color: olive;
+    overflow: auto;
+}
+
+.h{
+    width:50px;
+    height:150px;
+    background-color: aqua;
+  
+}

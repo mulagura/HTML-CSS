@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    pseudo classes and elements
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="pseudo.css">
+</head>
+
+<body>
+  <!-- pseudo classes : ==> 
+                 pseudo-class is a selector that specifies a special state of the selected element(s);
+            it can be combined with class also but not directly with class;
+            a.className:hover will work; .className:hover will not work
+
+             selector:pseudo-class {
+                 property:value;
+                              } -->
+
+  <!-- :root __> selector allows you to target highest level parent elment in DOM ~= HTML -->
+
+
+  <h2 id="htwo"> I am tag of h2 </h2>
+  <p> I am paragraph </p>
+  <a href="https://www.google.com/" target="_blank"> Click Here </a><br>
+  <button type="submit"> submit </button><br>
+  <input type="text" value="Ram Mulagura">
+  <div>
+    <b> I am bold in a div </b><br>
+    <i> I am iatalic in a div </i>
+    <p> I am just p tag </p>
+    <p> I am just another p tag </p>
+    <p> I am also just another p tag </p>
+  </div>
+
+  <!-- Pseudo elements   
+            selector::pseudo-element {
+                              property:value;
+                                       }
+        -->
+  <div class="elements">
+    <i> I am first italic </i>
+  </div>
+
+  <h4> I am h4 tag </h4>
+
+  <a class="anchor" href="http://google.com"> => This before is a link </a><br>
+  <a class="anchor1" href="http://google.com"> => This before is a link </a>
+
+</body>
+
+</html>

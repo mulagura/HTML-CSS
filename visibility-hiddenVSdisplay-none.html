@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> visibility:hidden; VS display:none; </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- display:none; ==> will not appear in page and no space allocated but can interact through DOM;
+                               removes the element from the normal flow of the page;  
+                             The value none lets you turn off the display of an element; 
+                             when you use none, all descendant elements also have their display turned off.
+            visibility:hidden; ==> will not appear in page but space is allocated and will present in DOM 
+                             maintains the box model of the element   
+            opacity:0 ==>     will not appear but if a href is given still you can click on        
+            *ngIf ==> removes elemnt from DOM tree itself if it found to be true; 
+             detaches it from DOM events, detaches the component from Angular change detection, and destroys it                                                                        -->
+
+        <h3 style="display: none;"> This is heading h3 </h3>
+        <h2 style="visibility: hidden;"> This is heading h2 </h2>
+        <h1> This is heading h1 </h1>
+        <p style="opacity: 0;"> I am paragaraph </p>
+        <a href="https://www.google.com/" target="_blank" style="opacity: 0;"> click here and there and here and there </a>
+    </body>
+</html>
