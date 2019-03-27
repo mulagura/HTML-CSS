@@ -8,13 +8,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .login_box{
+           
+            margin: 30px;
+        }
+        .data_display{
 
+        }
     </style>
 </head>
 
 <body>
 
+    <div class="login_box">
+
+        UserName:<input type="text" id="uname"> 
+        Password:<input type="password" id="pass">
+        <button type="submit" value="Login" id="login_button" onclick="login()">Login</button>
+
+    </div>
+
+    <div class="logged_success">
+
+        <p id="success_msg"></p>
+        
+    </div>
+
+    <div class="data_display">
+
+    </div>
+
 
 </body>
+<script>
+    function login(){
+
+        console.time("forms");
+        document.getElementById('success_msg').innerHTML = " Logged in successfully !";
+        var uname = document.getElementById('uname');
+        console.log(uname.value);
+        console.log("test",window.localStorage);
+        
+        document.getElementById('uname').value = "";
+        document.getElementById('pass').value = "";
+        console.timeEnd("forms");
+        
+
+    }
+</script>
 
 </html>
