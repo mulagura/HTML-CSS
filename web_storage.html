@@ -39,9 +39,13 @@
     </div>
 
     <div class="data_display">
-
+        <p id="display_details"></p>
     </div>
 
+    <div>
+        <button type="button" value="cookies" id="cookie_check" onclick="doCookies()"> COOKIE Check</button>
+    </div>
+    
 
 </body>
 <script>
@@ -49,16 +53,48 @@
 
         console.time("forms");
         document.getElementById('success_msg').innerHTML = " Logged in successfully !";
-        var uname = document.getElementById('uname');
-        console.log(uname.value);
-        console.log("test",window.localStorage);
-        
+        var uname = document.getElementById('uname').value;
+        var pwd = document.getElementById('pass').value;
+        //console.log(uname.value);
+        //console.log("test",window.sessionStorage);
+
+        if(sessionStorage){
+            //console.log("supports sessionStorage");
+            sessionStorage.setItem(uname,pwd);
+         
+        }
+        else{
+            //console.log("doesn't support sessionStorage");
+            
+        }
+                
+        var sessionStorageLength = sessionStorage.length;
+
+        for(var i=0;i<sessionStorageLength;i++){
+
+            var a = sessionStorage.key(i); // .key will get key value
+            var b = sessionStorage.getItem(a);            
+             
+            var get = document.getElementById('display_details')
+            get.innerHTML += a+ " - " + b + "<br>"; 
+            // sessionStorage.clear() // to clear all saved values
+        }
+
         document.getElementById('uname').value = "";
         document.getElementById('pass').value = "";
         console.timeEnd("forms");
-        
 
     }
+
+    // cookies
+    function doCookies(){
+    document.cookie = "uname:mulagura";
+    document.cookie = "pwd:infy123;expires=Fri,31 DEC 9999 23:23:23 IST";
+    document.cookie = "pwd:infy123;expires=Fri,31 DEC 9999 23:23:23 IST;path=https://fb.com/";
+    //console.log(document.cookie);
+    
+    }
+
 </script>
 
 </html>
