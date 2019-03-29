@@ -43,12 +43,14 @@
     </div>
 
     <div>
-        <button type="button" value="cookies" id="cookie_check" onclick="doCookies()"> COOKIE Check</button>
+        <!-- <button type="button" value="cookies" id="cookie_check" onclick="doCookies()"> COOKIE Check</button> -->
     </div>
+    <input type="button" onclick="doCookies()" value="setCookies">
+    <input type="button" onclick="CheckCookies()" value="getCookies">
     
 
 </body>
-<script>
+<script type="text/javascript">
     function login(){
 
         console.time("forms");
@@ -89,10 +91,21 @@
     // cookies
     function doCookies(){
     document.cookie = "uname:mulagura";
-    document.cookie = "pwd:infy123;expires=Fri,31 DEC 9999 23:23:23 IST";
-    document.cookie = "pwd:infy123;expires=Fri,31 DEC 9999 23:23:23 IST;path=https://fb.com/";
+    // document.cookie = "pwd:infy123;expires=Fri,31 DEC 9999 23:23:23 IST";
+    // document.cookie = "pwd:infy123;expires=Fri,31 DEC 9999 23:23:23 IST;path=https://fb.com/";
     //console.log(document.cookie);
     
+    }
+    function CheckCookies(){
+        if(document.cookie.length !==0){
+            var cookieData = document.cookie.split("=");
+            console.log("cookie data:"+cookieData);
+            
+        }
+        else{
+            console.log("no cookies");
+            
+        }
     }
 
 </script>
