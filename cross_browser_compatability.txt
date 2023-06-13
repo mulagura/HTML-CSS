@@ -14,9 +14,18 @@ Here is a list of popular browsers and their corresponding CSS prefixes for cros
 
 5. Opera (Blink engine):
    - Prefix: `-webkit-` 
-It is generally discouraged to directly reference the DOM as different browsers return different objects when you reference elements in the DOM. If you're using Angular, make sure to use "@angular/platform-browser": "<ANGULAR_VERSION>", "@angular/platform-browser-dynamic": "<ANGULAR_VERSION>", and as always, make sure the versions of those dependencies match the versions of the rest of your @angular dependencies. It's also worth looking into Angular Polyfills, as they can help you support some browsers that are trickier than other. Always remember to test your code on different browsers frequently.
+   
+It is generally discouraged to directly reference the DOM as different browsers return different objects 
+when you reference elements in the DOM. 
+If you're using Angular, make sure to use "@angular/platform-browser": "<ANGULAR_VERSION>", 
+"@angular/platform-browser-dynamic": "<ANGULAR_VERSION>", 
+and as always, make sure the versions of those dependencies match the versions of the rest of your @angular dependencies.
+It's also worth looking into Angular Polyfills, as they can help you support some browsers that are trickier than other. 
+Always remember to test your code on different browsers frequently.
 
-If you're using NPM, I would look into using the scss-bundle dependency. If you're also using webpack, you should also be able to easily import styles from frameworks like bootstrap, i.e. @import "~bootstrap/scss/bootstrap";. All you need to do is make sure you have the bootstrap dependency installed in NPM. In general, Frameworks already consider cross browser support (among other things like accessibility and responsiveness) when they generate their style.
+If you're using NPM, I would look into using the scss-bundle dependency. 
+If you're also using webpack, you should also be able to easily import styles from frameworks like bootstrap, i.e. @import "~bootstrap/scss/bootstrap";. All you need to do is make sure you have the bootstrap dependency installed in NPM. 
+In general, Frameworks already consider cross browser support (among other things like accessibility and responsiveness) when they generate their style.
 
 This really depends on what browsers you are targeting. There is no magic bullet for Cross Browser compatibility. 
 You can use browserstack to see how your site looks in many different browsers.
