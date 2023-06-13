@@ -1,0 +1,23 @@
+Here is a list of popular browsers and their corresponding CSS prefixes for cross-compatibility:
+
+1. Mozilla Firefox (Gecko engine): 
+   - Prefix: `-moz-`
+
+2. Google Chrome (Blink engine):
+   - Prefix: `-webkit-`
+
+3. Safari (Blink engine):
+   - Prefix: `-webkit-`
+
+4. Microsoft Edge (Chromium engine):
+   - Prefix: `-webkit-` (for backward compatibility) and `-ms-`
+
+5. Opera (Blink engine):
+   - Prefix: `-webkit-` 
+
+It's important to note that CSS prefixes are used to provide experimental 
+or non-standard CSS features that are not yet fully supported by all browsers. 
+However, with the advancements in browser technology, the need for using prefixes has decreased significantly. 
+It is generally recommended to use vendor prefixes sparingly and check for standard CSS support across browsers.
+
+https://caniuse.com/
