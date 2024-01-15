@@ -1,0 +1,11 @@
+Single Tag/ Bachelor Tag
+........................
+In HTML, there are two types of tags - single tags and paired tags.
+
+A single tag is an HTML tag that doesn't require a closing tag. It is also called a self-closing tag or void element. 
+Single tags are used to define elements that do not have any content. 
+Some examples of single tags in HTML are the <br>, <img>, and <input> tags.
+
+A paired tag, on the other hand, is an HTML tag that has an opening and a closing tag. 
+The opening tag defines the start of the element, and the closing tag defines the end of the element. 
+Content can be added between the opening and closing tags. Some examples of paired tags in HTML are the <p>, <div>, and <a> tags.

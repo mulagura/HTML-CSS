@@ -15,6 +15,11 @@ Here is a list of popular browsers and their corresponding CSS prefixes for cros
 5. Opera (Blink engine):
    - Prefix: `-webkit-` 
    
+eg.
+.myElement {
+-moz-border-radius: 20px;
+}
+
 It is generally discouraged to directly reference the DOM as different browsers return different objects 
 when you reference elements in the DOM. 
 If you're using Angular, make sure to use "@angular/platform-browser": "<ANGULAR_VERSION>", 
