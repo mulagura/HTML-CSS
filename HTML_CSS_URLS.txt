@@ -1,0 +1,34 @@
+Accessibility standards
+
+Responsive Web design
+
+On SASS related to CSS
+
+How z-index will work
+
+box-sizing:border-box
+https://www.youtube.com/results?search_query=box+sizing+border+box+css
+
+normalize css vs reset css
+
+HTML5 Web sockets usage in web application – not   
+
+CSS3
+https://www.youtube.com/watch?v=CUxH_rWSI1k
+
+Difference between HTML 4 and 5 ? 
+Tags which are deprecated in HTML5 ? 
+
+16.	What are the new semantic tags in HTML5
+17.	What are the new features in CSS3
+18.	Shorthand style declaration for margin/padding in CSS3
+19.	What are block and inline elements?
+20.	Namespacing/Scoping in CSS, JS
+CSS – difference between the measurement units - em, pt, px, rem 
+2.	RWD – what are the coding standards followed? What is the measurement unit used ?
+Attributes of CSS3 ? Box shadow attribute .. 
+What is border radius ? Why do we use border radius ? 
+Can u apply border radius to paragraph 
+Bootstrap Grid –How many columns - ?
+CSS3 media queries .. what are they ?
+..........................................end of html..............................
