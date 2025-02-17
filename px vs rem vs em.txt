@@ -1,0 +1,10 @@
+REM scales with the user's browser settings, making it more accessible, while px remains fixed
+
+Pixels (px) Used for fixed-size elements, Ensures consistent results across devices, and Useful for precise control. 
+
+Ems (em) Used to scale an element's size based on its parent element's font size
+Useful for responsive designs
+Can be used to create component-specific responsiveness
+
+Rems (rem)
+Used to scale an element's size based on the browser font size
